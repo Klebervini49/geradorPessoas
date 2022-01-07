@@ -71,6 +71,6 @@ h1 {
 }
 
 .gerarPessoa:hover {
-    background-color: var(--main-bg);
+    background-color: #0583F2;
     transition-duration: 0.3s;
 }
