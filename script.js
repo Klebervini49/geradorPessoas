@@ -1,7 +1,7 @@
 /**
  * Autor: Kleberson Vinicius
  * Data: 06/01/2022
- * V1
+ * 
  */
 
 document.querySelector('.gerarPessoa').addEventListener('click', async () => {
@@ -14,16 +14,23 @@ document.querySelector('.gerarPessoa').addEventListener('click', async () => {
         primeiroNome = resultsInfo.name.first,
         ultimoNome = resultsInfo.name.last,
         genero = resultsInfo.gender,
-        cidade = resultsInfo.location.city,
         pais = resultsInfo.location.country,
+        cidade = resultsInfo.location.city,
         estado = resultsInfo.location.state,
 
         docImg = document.querySelector('.img'),
         docNome = document.querySelector('.nome'),
         docGenero = document.querySelector('.gender'),
+
         docCountry = document.querySelector('.country'),
-        docState = document.querySelector('.state'),
-        docCity = document.querySelector('.city');
+        docCity = document.querySelector('.city'),
+        docState = document.querySelector('.state');
+
+    // Mostra na tela as informações
+    docImg.setAttribute("src", img);
+    docImg.style.display = 'block'
+
+    docNome.innerHTML = `Nome: ${primeiroNome} ${ultimoNome} `
 
     // Tranforma o genero em portugues 
     if (genero == 'male') {
@@ -31,12 +38,6 @@ document.querySelector('.gerarPessoa').addEventListener('click', async () => {
     } else {
         genero = 'Feminino'
     }
-
-    // Mostra na tela as informações
-    docImg.setAttribute("src", img);
-    docImg.style.display = 'block'
-
-    docNome.innerHTML = `Nome: ${primeiroNome} ${ultimoNome} `
     docGenero.innerHTML = `Gênero: ${genero} `
 
     docCountry.innerHTML = `País: ${pais}`
