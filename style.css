@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    background-color: rgb(250, 245, 245);
+}
+
+h1 {
+    margin: 40px 0;
+}
+
+.infos {
+    background-color: rgba(255, 255, 255, 0.712);
+    padding: 30px 50px;
+}
+
+.img {
+    display: none;
+}
+
+.infos .infoPag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    color: #000;
+    padding: 5px;
+    border-left: 3px solid #000;
+}
+
+.infos .infoPag:hover {
+    background-color: rgba(0, 0, 0, 0.767);
+    color: white;
+    border-left: 3px solid #ff0000;
+    transition: all 0.5s;
+}
+
+.infoPag ul,
+.infoPag li {
+    list-style: none;
+}
+
+.infoPag li {
+    border-left: 2px solid #000;
+    margin-bottom: 3px;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.infoPag li:hover {
+    border-left: 2px solid #fff;
+}
+
+.gerarPessoa {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: #0D0D0D;
+    color: #FFF;
+    outline: 0;
+    border: 0;
+}
+
+.gerarPessoa:hover {
+    background-color: var(--main-bg);
+    transition-duration: 0.3s;
+}
